@@ -11,7 +11,7 @@ public class MyQueue {
         myLinkedList.append(newNode);
     }
 
-    /* This method is used for display the output */
+    /*Method to display the output */
     public void printQueue() {
         myLinkedList.printMyNodes();
     }
