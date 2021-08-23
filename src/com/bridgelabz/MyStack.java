@@ -15,7 +15,7 @@ public class MyStack {
         myLinkedList.add(myNode);
     }
 
-    /* This method is used for display the output */
+    /*Method is used to display the output */
     public void printStack() {
         myLinkedList.printMyNodes();
     }
