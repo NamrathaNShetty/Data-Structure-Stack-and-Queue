@@ -1,7 +1,5 @@
 package com.bridgelabz;
 
-import org.w3c.dom.Node;
-
 public class MyLinkedList {
     public INode head;
     public INode tail;
@@ -43,19 +41,21 @@ public class MyLinkedList {
     }
 
     /* This method is used for deleting the first node */
-    public void popFirst() {
+    public INode pop() {
         if(head !=null)
             this.head = head.getNext();
+        return null;
     }
 
     /* Method is used for deleting the last node */
-    public void popLast() {
+    public INode popLast() {
         INode tempNode = head;
         while (tempNode.getNext() != (tail)) {
             tempNode = tempNode.getNext();
         }
         this.tail=tempNode;
         tempNode.setNext(null);
+        return tempNode;
     }
     /* Method to get the position of an element*/
     public void searchElement() {
