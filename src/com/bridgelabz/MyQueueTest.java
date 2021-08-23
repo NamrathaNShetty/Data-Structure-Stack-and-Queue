@@ -12,6 +12,7 @@ public class MyQueueTest {
         myQueue.enqueue(myFirstNode);
         myQueue.enqueue(mySecondNode);
         myQueue.enqueue(myThirdNode);
+        INode dequeue = myQueue.dequeue();
         myQueue.printQueue();
     }
 }

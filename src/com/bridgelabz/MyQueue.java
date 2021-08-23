@@ -11,8 +11,13 @@ public class MyQueue {
         myLinkedList.append(newNode);
     }
 
+
     /*Method to display the output */
     public void printQueue() {
         myLinkedList.printMyNodes();
+    }
+
+    public INode dequeue() {
+        return myLinkedList.pop();
     }
 }
